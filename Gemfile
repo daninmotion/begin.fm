@@ -61,3 +61,9 @@ gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
 
 #Devise
 gem 'devise', '~> 4.2'
+
+#Paperclip
+gem 'paperclip', '~> 5.1'
+
+#AWS
+gem 'aws-sdk', '~> 2.6', '>= 2.6.6'
