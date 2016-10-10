@@ -1,6 +1,8 @@
 class EpisodesController < ApplicationController
-  before_action :set_episode, only: [:show, :edit, :update, :destroy]
   before_action :authenticate_admin!
+  before_action :set_episode, only: [:show, :edit, :update, :destroy]
+  before_action :find_episode, only: [:show, :edit, :update, :destroy]
+
 
   def index
     @episodes = Episode.all
@@ -59,5 +61,9 @@ class EpisodesController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def episode_params
       params.require(:episode).permit(:title, :description, :mp3)
+    end
+
+    def find_episode
+      @episode = Episode.find(params[:id])
     end
 end
