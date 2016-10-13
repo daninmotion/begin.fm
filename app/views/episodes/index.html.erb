@@ -71,7 +71,7 @@
     $("#jquery_jplayer_1").jPlayer({
       ready: function () {
         $(this).jPlayer("setMedia", {
-          mp3: "<%= @episode.mp3.url %>",
+          mp3: "<%= @episodes.mp3.all %>",
         });
       },
       swfPath: "/js",
