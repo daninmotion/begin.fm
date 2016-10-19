@@ -1,0 +1,207 @@
+/***Episode Show page ***/
+
+.episode-content {
+
+  background-color: #fff;
+  margin-bottom: 50px;
+  border-radius: 10px;
+
+	h4 {
+		padding-top: 20px;
+	}
+	
+	h4, p {
+		text-align: center
+	}
+}
+
+/***Nav***/
+
+.nav h4 {
+
+  a {
+    color: black;
+    text-decoration: none;
+    &:hover {
+      color: #856EC6;
+    }
+  }
+}
+
+.nav {
+  
+  li {
+    display: inline-block;
+  }
+
+  a {
+    color: #856EC6;
+  }
+
+  padding-bottom: 10px;
+
+}
+
+/*** jplayer ***/
+
+.jp-jplayer,.jp-audio {
+  width: 70%;
+  margin: 3rem auto .5rem auto;
+}
+
+.jp-title {
+  font-size: 12px;
+  text-align: center;
+  color: #999;
+}
+
+.jp-title ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.jp-gui {
+  position: relative;
+  background: #D8D8D8;
+  transition: background .4s ease-in-out;
+  border-radius: 3px;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.jp-controls {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.jp-controls li {
+  display: inline;
+}
+
+.jp-controls a {
+  color: #856EC6;
+}
+
+.jp-play,.jp-pause {
+  width: 60px;
+  height: 40px;
+  display: inline-block;
+  text-align: center;
+  line-height: 43px;
+  border-right: 1px solid #fff;
+}
+
+.jp-controls .jp-play:hover,.jp-controls .jp-pause:hover {
+  background-color: #919191;
+}
+
+.jp-mute,.jp-unmute {
+  position: absolute;
+  right: 59px;
+  top: -3px;
+  width: 20px;
+  height: 40px;
+  display: inline-block;
+  line-height: 46px;
+}
+
+.jp-mute {
+  text-align: left;
+}
+
+.jp-time-holder {
+  color: #856EC6;
+  font-size: 12px;
+  line-height: 14px;
+  position: absolute;
+  right: 90px;
+  top: 14px;
+}
+.jp-progress {
+  background-color: #919191;
+  border-radius: 20px 20px 20px 20px;
+  overflow: hidden;
+  position: absolute;
+  right: 22%;
+  top: 15px;
+  width: 65%;
+}
+
+.jp-play-bar {
+  height: 12px;
+  background-color: #fff;
+  border-radius: 20px 20px 20px 20px;
+}
+
+.jp-volume-bar {
+  position: absolute;
+  right: 10px;
+  top: 17px;
+  width: 45px;
+  height: 8px;
+  border-radius: 20px 20px 20px 20px;
+  background-color: #919191;
+  overflow: hidden;
+}
+
+.jp-volume-bar-value {
+  background-color: #856EC6;
+  height: 8px;
+  border-radius: 20px 20px 20px 20px;
+}
+
+/***iPhone(iPhone6 screen)**/
+@media only screen and (max-width: 667px) {
+ 
+  .jp-time-holder {
+    right: 80px;
+  }
+
+  .jp-mute, .jp-unmute {
+    right: 53px;
+  }
+
+  .jp-volume-bar {
+    width: 40px;
+  }
+}
+
+/***iPhone(iPhone6 Plus)**/
+@media only screen and (max-width: 767px) {
+  .jp-audio {
+    width: 90%;
+  }
+
+  .jp-progress {
+    right: 38%;
+    width: 40%;
+  }
+}
+
+
+/* Screens between 768px and 1024px */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .jp-progress {
+    right: 26%;
+    width: 60%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

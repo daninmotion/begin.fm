@@ -68,3 +68,6 @@ gem 'paperclip', '~> 5.1'
 
 #AWS
 gem 'aws-sdk', '~> 2.6', '>= 2.6.6'
+
+#Trix WYSIWYG editor
+gem 'trix', '~> 0.9.9'
