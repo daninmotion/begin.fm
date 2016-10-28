@@ -1,9 +1,8 @@
-/***Episode Show page ***/
+/***Episode show page content ***/
 
 .episode-content {
 
   background-color: #fff;
-  margin-bottom: 50px;
   border-radius: 10px;
 
 	h4 {
@@ -14,6 +13,30 @@
 		text-align: center
 	}
 }
+
+/*** end of Episode show page content ***/
+
+/***Episode index page content ***/
+
+.episode-listings {
+  background-color: #fff;
+  border-radius: 10px;
+  margin: 0px 10px 50px 10px;
+  box-shadow: 0 2px 2px rgba(50,59,67,0.1);
+  &:hover {
+    box-shadow: 0 3px 3px rgba(50,59,67,0.1);
+    transition: all 0.5s ease-in-out;
+  }
+
+  .episode-listings-content {
+    ul {
+      list-style-type: none;
+    }
+    padding: 30px 0 30px 0;
+  }
+}
+
+/*** end of Episode index page content ***/
 
 /***Nav***/
 
@@ -38,9 +61,33 @@
     color: #856EC6;
   }
 
-  padding-bottom: 10px;
+  padding-bottom: 20px;
 
 }
+
+.nav-line-break {
+  color: #856EC6;
+}
+
+/*** end of Nav ***/
+
+/***Nav Footer***/
+.nav-footer {
+  li {
+    display: inline-block;
+  }
+
+  a {
+    color: #856EC6;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  padding-bottom: 10px;
+}
+
+/*** end of Nav Footer ***/
 
 /*** jplayer ***/
 
@@ -152,9 +199,17 @@
   border-radius: 20px 20px 20px 20px;
 }
 
+/*** end of jplayer ***/
+
 /***Trix Editor***/
 .trix-content {
   padding-bottom: 50px;
+}
+/*** end of Trix Editor ***/
+
+/***Home Page Card Title ***/
+h4.card-title.home-page {
+  margin-top: 70px;
 }
 
 /***iPhone(iPhone6 screen)**/

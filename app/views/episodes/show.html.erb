@@ -61,6 +61,15 @@
           <div class="trix-content"><%= @episode.description.html_safe %></div>
         </div>
       </div>
+      <div class="row">
+        <div class="col-xs-offset-2 col-xs-8 col-xs-offset-2">
+          <ul class="nav-footer">
+            <hr>
+            <li class="nav-home"><%= link_to 'Home', root_path %></li> |
+            <li><%= link_to 'Say Hi', "#" %></li>
+          </ul>
+        </div>
+      </div>
 		</div>
 	</div>
 </div>
