@@ -8,8 +8,13 @@
   <div class="row">
     <div class="col-md-6 col-md-offset-3">
       <ul class="nav text-center">
-        <li><%= link_to 'Say Hi', "#" %></li> <span class="nav-line-break">|</span>
-        <li><%= link_to 'New Episode', new_episode_path %></li>
+        <li>
+          <a href="mailto:dan85.cardenas@gmail.com?subject=Hello">Say Hi</a>
+        </li> 
+        <% if admin_signed_in? %>
+          <span class="nav-line-break">|</span>
+          <li><%= link_to 'New Episode', new_episode_path %></li>
+        <% end %>
       </ul>
     </div>
   </div>
@@ -20,12 +25,14 @@
           <div class="col-sm-8 col-sm-offset-1 episode-listings-content">
             <ul>
               <li><h4><%= episode.title %></h4></li>
-              <li>
-                <p>
-                <%= link_to 'Edit', edit_episode_path(episode) %> |
-                <%= link_to 'Destroy', episode, method: :delete, data: { confirm: 'Are you sure?' } %>
-                </p>
-              </li>
+              <% if admin_signed_in? %>
+                <li>
+                  <p>
+                    <%= link_to 'Edit', edit_episode_path(episode), class: "btn btn-primary" %>
+                    <%= link_to 'Delete', episode, class: "btn btn-primary", method: :delete, data: { confirm: 'Are you sure?' } %>
+                  </p>
+                </li>
+              <% end %>
               <li>
                 <p><%= episode.description.truncate(140).html_safe %></p>
               </li>
