@@ -1,10 +1,15 @@
 /***Logo***/
-  .logo {
-    font-family: 'Roboto', sans-serif;
-    &:hover {
-      color: #856EC6;
-    }
+.logo {
+  font-family: 'Roboto', sans-serif;
+  &:hover {
+    color: #856EC6;
   }
+}
+
+lead {
+  font-size: 18px;
+}
+
 /*** end of Logo***/
 
 /***Episode show page content ***/
@@ -82,6 +87,7 @@
   }
 
   padding-bottom: 20px;
+  margin-top: -25px;
 
 }
 
