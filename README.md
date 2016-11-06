@@ -2,7 +2,7 @@
 
 * Ruby on Rails 5
 
-* Amazon S3 for Mp4 storage
+* Amazon S3
 
 * jPlayer
 
