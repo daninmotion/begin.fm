@@ -241,10 +241,6 @@ h4.card-title.home-page {
 
 /***iPhone(iPhone6 screen)**/
 @media only screen and (max-width: 667px) {
- 
-  .jp-time-holder {
-    right: 80px;
-  }
 
   .jp-mute, .jp-unmute {
     right: 53px;
@@ -257,14 +253,20 @@ h4.card-title.home-page {
 
 /***iPhone(iPhone6 Plus)**/
 @media only screen and (max-width: 767px) {
+  
+  .jp-time-holder {
+    right: 40px;
+  }
+
   .jp-audio {
     width: 90%;
   }
 
   .jp-progress {
-    right: 38%;
+    right: 30%;
     width: 40%;
   }
+
 }
 
 
