@@ -5,7 +5,7 @@ class EpisodesController < ApplicationController
 
 
   def index
-    @episodes = Episode.all
+    @episodes = Episode.all.order('created_at DESC')
   end
 
   def show
